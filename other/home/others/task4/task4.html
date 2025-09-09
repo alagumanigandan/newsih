@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pollution Quiz</title>
+  <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+  <h2>Pollution Quiz</h2>
+  <button id="backBtn">Back</button>
+
+  <div id="pollutionTypes">
+    <div class="pollution" onclick="startQuiz('Air Pollution')">
+
+      <img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" alt="Air">
+      <p>Air Pollution</p>
+    </div>
+    <div class="pollution" onclick="startQuiz('Water Pollution')">
+      <img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" alt="Water">
+      <p>Water Pollution</p>
+    </div>
+    <div class="pollution" onclick="startQuiz('Soil Pollution')">
+      <img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" alt="Soil">
+      <p>Soil Pollution</p>
+    </div>
+    <div class="pollution" onclick="startQuiz('Noise Pollution')">
+      <img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" alt="Noise">
+      <p>Noise Pollution</p>
+    </div>
+  </div>
+
+  <div id="quizContainer" class="hidden">
+    <div class="outer-box">
+    <h3 id="quizQuestion"></h3>
+    <div id="quizOptions"></div>
+    <p id="quizResult"></p>
+    <button id="nextQuestion" class="hidden">Next Question</button>
+  </div>
+</div>
+  <script src="task4.js"></script>
+</body>
+</html>

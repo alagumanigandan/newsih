@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add File</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    /* Upload Box */
+    .upload-box {
+      border: 2px dashed #4a90e2;
+      padding: 25px;
+      text-align: center;
+      border-radius: 12px;
+      background: #fff;
+      width: 340px;
+      margin-bottom: 20px;
+    }
+    #uploadBtn {
+      background: #4a90e2;
+      color: white;
+      padding: 8px 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 12px;
+    }
+    #uploadBtn:hover {
+      background: #357abd;
+    }
+
+    /* Soil Label */
+    #soilLabel {
+      margin-top: 15px;
+      font-weight: bold;
+      display: none;
+      font-size: 18px;
+      color: #222;
+    }
+
+    /* Plants */
+    .plants {
+      display: none;
+      gap: 20px;
+      margin-top: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .plant {
+      width: 120px;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .plant:hover {
+      transform: scale(1.1);
+    }
+
+    /* Fertilizer text */
+    #fertilizerText {
+      display: none;
+      margin-top: 25px;
+      padding: 15px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      width: 320px;
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* Back button */
+    .back-btn {
+      margin-top: 30px;
+      background: #e74c3c;
+      color: white;
+      padding: 8px 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .back-btn:hover {
+      background: #c0392b;
+    }
+    .outer-box {
+  border: 2px solid black;   /* Outer border */
+  padding: 10px;             /* Space inside border */
+  display: inline-block;     /* Fit tightly around fields */
+  border-radius: 8px;        /* Optional rounded corners */
+}
+.outer-box input {
+  margin: 5px;               /* Space between fields */
+}
+
+  </style>
+</head>
+<body>
+  <div class="outer-box">
+  <h2>Upload Soil Image</h2>
+
+  <div class="upload-box">
+    <input type="file" id="upload">
+    <br>
+    <button id="uploadBtn">Upload</button>
+  </div>
+
+  <div id="soilLabel">🌱 Black Soil Detected</div>
+
+  <div class="plants" id="plants">
+    <img src="https://cdn-icons-png.flaticon.com/512/766/766222.png" alt="Tomato" class="plant" onclick="showFertilizer('Tomato requires Nitrogen-rich fertilizer (Urea, Compost)')">
+    <img src="https://cdn-icons-png.flaticon.com/512/766/766213.png" alt="Carrot" class="plant" onclick="showFertilizer('Carrot needs Phosphate fertilizer for better roots')">
+    <img src="https://cdn-icons-png.flaticon.com/512/766/766207.png" alt="Spinach" class="plant" onclick="showFertilizer('Spinach grows well with Potash and Organic manure')">
+  </div>
+
+  <div id="fertilizerText"></div>
+
+  <!-- Back Button -->
+  <button class="back-btn" onclick="goBack()">⬅ Back</button>
+  </div>
+
+  <script>
+    const upload = document.getElementById("upload");
+    const uploadBtn = document.getElementById("uploadBtn");
+    const soilLabel = document.getElementById("soilLabel");
+    const plants = document.getElementById("plants");
+    const fertilizerText = document.getElementById("fertilizerText");
+
+    // After upload
+    uploadBtn.addEventListener("click", () => {
+      if (upload.files.length > 0) {
+        soilLabel.style.display = "block";
+        plants.style.display = "flex";
+      } else {
+        alert("Please select a file first.");
+      }
+    });
+
+    // Show fertilizer recommendation in words
+    function showFertilizer(text) {
+      fertilizerText.style.display = "block";
+      fertilizerText.innerText = text;
+    }
+
+    // Back button function
+    function goBack() {
+      window.location.href = "task1.html"; // Change this to your main page filename
+    }
+  </script>
+</body>
+</html>

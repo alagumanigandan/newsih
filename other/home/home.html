@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">MySite</div>
+
+            <!-- Navigation -->
+            <nav class="nav-menu">
+                <div class="menu-toggle">☰</div>
+                <ul class="nav-list">
+                    <li><a href="./home.html" class="nav-link">Home</a></li>
+                    <li><a href="#events" class="nav-link">Live Events</a></li>
+                    <li><a href="./others/live events/exhange.html" class="nav-link">Exchange</a></li>
+                    <li><a href="#profile" class="nav-link">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+ 
+        <main>
+    <!-- Photo Scroll Box -->
+    <div class="carousel">
+        <button class="carousel-btn prev">❮</button>
+        <div class="carousel-track">
+            <img src="../../img/slide1.jpeg" alt="Image 1">
+            <img src="../../img/slide2.jpeg" alt="Image 2">
+            <img src="../../img/slide3.jpeg" alt="Image 3">
+            <img src="../../img/slide4.jpeg" alt="Image 4">
+            <img src="../../img/slide 5.jpeg" alt="Image 5">
+        </div>
+        <button class="carousel-btn next">❯</button>
+    </div>
+    <div class="carousel-dots"></div>
+    <!-- Tasks Section -->
+<div class="tasks">
+    <div class="task-card">
+        <img src="../../img/cartoon-tree-character-10015282..jpg" alt="Task 1">
+        <div class="task-content" onclick="openTask1()">
+            <h1>Planting trees</h1>
+            <p>🌱 “Planting trees today ensures a greener, healthier tomorrow.”</p>
+        </div>
+    </div>
+
+    <div class="task-card">
+        <img src="../../img/trash-sorting-flat-concept-vector-illustration-waste-management-garbage-segregation-and-recycling-man-separating-rubbish-2d-cartoon-character-for-2D2YHT0.jpg "alt="Task 2">
+        <div class="task-content"  onclick="openTask2()">
+            <h1>Waste Mangement</h1>
+            <p>♻️ “Smart waste management turns trash into valuable resources for a cleaner future.”</p>
+        </div>
+    </div>
+
+    <div class="task-card">
+        <img src="../../img/task3.jpg" alt="Task 3" onclick="openTask3()">
+        <div class="task-content" onclick="openTask3()">
+            <h1>Garderning</h1>
+            <p>🌿 “Gardening brings life, color, and freshness to every space.”</p>
+        </div>
+    </div>
+
+    <div class="task-card">
+        <img src="../../img/task4.jpg" alt="Task 4" onclick="openTask4()">
+        <div class="task-content" onclick="openTask4()">
+            <h1>Quiz</h1>
+            <p>📝 “Quizzes spark curiosity and make learning fun and engaging.”</p>
+        </div>
+    </div>
+
+    <div class="task-card center">
+        <img src="../../img/task5.jpeg" alt="Task 5">
+        <div class="task-content" onclick="openTask5()">
+            <h1>Complain</h1>
+            <p>📢 “Raise a complaint to make your voice heard and problems solved.”</p>
+        </div>
+    </div>
+</div>
+
+<!-- Live Events Section -->
+<section id="events" class="events-section">
+  <div class="events-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/145/145867.png" alt="Cartoon Hi" class="events-cartoon">
+    <h2>Hi 👋</h2>
+    <p>No live events right now. Stay tuned!</p>
+  </div>
+</section>
+
+<!-- Exchange Section -->
+
+
+</main>
+
+ 
+
+    <script src="home.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+#backBtn {
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: #333;
+  color: white;
+}
+
+#backBtn:hover {
+  background: #555;
+}
+
+#pollutionTypes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pollution {
+  width: 150px;
+  padding: 10px;
+  border-radius: 12px;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.pollution:hover {
+  transform: scale(1.1);
+}
+
+.pollution img {
+  width: 80px;
+  height: 80px;
+}
+
+#quizContainer {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#quizOptions button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #4a90e2;
+  color: white;
+}
+
+#quizOptions button:hover {
+  background: #357abd;
+}
+
+#quizResult {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#nextQuestion {
+  margin-top: 15px;
+  background: #ff9800;
+}
+
+#nextQuestion:hover {
+  background: #e68a00;
+}
+.outer-box {
+  border: 2px solid black;   /* Outer border */
+  padding: 10px;             /* Space inside border */
+  display: inline-block;     /* Fit tightly around fields */
+  border-radius: 8px;        /* Optional rounded corners */
+}
+.outer-box input {
+  margin: 5px;               /* Space between fields */
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School & College Sign Up</title>
+  <!-- Go back one level to load shared CSS -->
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <!-- Background Decorative Elements -->
+  <div class="background">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- Sign Up Container -->
+  <div class="container">
+    <div class="tab-buttons">
+      <button id="schoolBtn" class="active">School</button>
+      <button id="collegeBtn">College</button>
+    </div>
+
+    <!-- School Sign Up -->
+    <div id="schoolForm" class="form active">
+      <h2>School Sign Up</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="text" placeholder="School Name" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p class="signup-text">Already have an account? 
+        <a href="../../index.html" class="signup-btn">Login here</a>
+      </p>
+    </div>
+
+    <!-- College Sign Up -->
+    <div id="collegeForm" class="form">
+      <h2>College Sign Up</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="text" placeholder="College Name" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <p class="signup-text">Already have an account? 
+        <a href="../../index.html" class="signup-btn">Login here</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Go back one level to load shared JS -->
+  <script src="../../script.js"></script>
+</body>
+</html>

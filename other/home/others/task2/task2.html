@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waste Management</title>
+  <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+  <div class="split left" onclick="showWaste('renewable')">
+    <div class="centered">
+      <img src="../../../../img/green.webp" alt="Green Bin" class="bin-img">
+      <h2>Green Bin</h2>
+    </div>
+  </div>
+
+  <div class="split right" onclick="showWaste('nonrenewable')">
+    <div class="centered">
+      <img src="../../../../img/red dust2.jpeg" alt="Red Bin" class="bin-img">
+      <h2>Red Bin</h2>
+    </div>
+  </div>
+
+  <!-- Waste Display Section -->
+  <div id="wasteContainer" class="waste-container hidden">
+    <button class="back-btn" onclick="goBack()">← Back</button>
+    <h2 id="wasteTitle"></h2>
+    <div id="wasteItems" class="waste-items"></div>
+  </div>
+
+  <script src="task2.js"></script>
+</body>
+</html>

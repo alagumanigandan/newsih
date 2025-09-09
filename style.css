@@ -1,0 +1,131 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #e6f9f0, #f4fdf7);
+}
+
+/* Background animation (optional soft glow like screenshot) */
+.background span {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 200, 100, 0.1);
+  border-radius: 50%;
+  animation: float 6s infinite ease-in-out;
+}
+
+.background span:nth-child(1) { top: 10%; left: 20%; }
+.background span:nth-child(2) { top: 70%; left: 60%; }
+.background span:nth-child(3) { top: 50%; left: 80%; }
+.background span:nth-child(4) { top: 30%; left: 10%; }
+.background span:nth-child(5) { top: 80%; left: 30%; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Container */
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  width: 320px;
+  box-shadow: 0px 8px 20px rgba(0, 128, 0, 0.15);
+  text-align: center;
+}
+
+/* Tab Buttons */
+.tab-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tab-buttons button {
+  flex: 1;
+  padding: 12px 0;
+  border: none;
+  cursor: pointer;
+  background: #f0f0f0;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.tab-buttons button.active {
+  background: linear-gradient(90deg, #00c16a, #00e48f);
+  color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 200, 100, 0.3);
+}
+
+/* Forms */
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #0f5132;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s;
+}
+
+form input:focus {
+  border-color: #00c16a;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #00c16a, #00e48f);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background: linear-gradient(90deg, #00a85a, #00d67e);
+}
+
+/* Signup Text */
+.signup-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-btn {
+  color: #00c16a;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-btn:hover {
+  text-decoration: underline;
+}

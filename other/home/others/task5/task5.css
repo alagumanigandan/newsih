@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f4f8;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 30px 0;
+}
+
+.icon {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon img {
+  width: 80px;
+  height: 80px;
+}
+
+.icon p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.message {
+  display: none;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+#backBtn {
+  margin-top: 40px;
+  padding: 10px 20px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#backBtn:hover {
+  background: #357abd;
+}
+.chatbox {
+  border: 2px solid #ccc;   /* Outer border */
+  border-radius: 20px;      /* Rounded edges like chat apps */
+  padding: 5px 10px;
+  display: flex;            /* Align in one line */
+  align-items: center;      /* Center vertically */
+  width: 300px;             /* Fixed width (optional) */
+}
+
+.chatbox input {
+  flex: 1;                  /* Take up remaining space */
+  border: none;             /* No inner border */
+  outline: none;
+  font-size: 16px;
+}
+
+.chatbox button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 5px;
+  padding-top: 5px;;
+}
+.outer-box {
+  border: 2px solid black;   /* Outer border */
+  padding: 10px;             /* Space inside border */
+  display: inline-block;     /* Fit tightly around fields */
+  border-radius: 8px;        /* Optional rounded corners */
+}
+.outer-box input {
+  margin: 5px;               /* Space between fields */
+}

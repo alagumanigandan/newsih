@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School & College Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="background">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+
+  <div class="container">
+    <div class="tab-buttons">
+      <button id="schoolBtn" class="active">School</button>
+      <button id="collegeBtn">College</button>
+    </div>
+
+
+    <div id="schoolForm" class="form active">
+      <h2>School Login</h2>
+      <form>
+        <input type="email" placeholder="School Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p class="signup-text">Don’t have an ID? 
+        <a href="/other/signin/signin.html" class="signup-btn">Create it here</a>
+      </p>
+    </div>
+
+ <div id="collegeForm" class="form">
+      <h2>College Login</h2>
+      <form>
+        <input type="email" placeholder="College Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p class="signup-text">Don’t have an ID? 
+        <a href="./other/signin/signin.html" class="signup-btn">Create it here</a>
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
